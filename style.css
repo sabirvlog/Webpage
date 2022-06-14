@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	user-select: none;
+}
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to top, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%), url(bg.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow-y: hidden;
+}
+.hero {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+.hero img {
+	border-radius: 10px;
+    width: 100px;
+    height: 70%;
+    margin: 20px;
+}
+.nav {
+	display: flex;
+}
+.nav ul {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.nav li {
+	list-style: none;
+	padding: 15px;
+	margin: 15px;
+}
+.nav a {
+	text-decoration: none;
+	color: floralwhite;
+	font-size: 18px;
+	font-weight: 600;
+}
+.section {
+
+}
+.section .btn {
+	width: 200px;
+	padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    border-top-left-radius: 30px;
+    background: #e91e8b;
+    color: white;
+    transition: .3s ease-in;
+}
+.section .btn-1 {
+	background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 0;
+    margin: 20px 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.mid {
+	position: absolute;
+	top: 35%;
+	left: 110px;
+}
+.mid h1 {
+	font-size: 50px;
+	color: floralwhite;
+	text-shadow: 120px -25px 250px;
+	margin-bottom: 15px;
+	filter: drop-shadow(2px 4px 6px black);
+	line-height: 70px;
+}
+.mid p {
+	font-size: 18px;
+    color: #e3d7d7;
+    line-height: 25px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+.btn-2 {
+	width: 200px;
+	padding: 10px 50px;
+    margin: 25px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    border-top-left-radius: 30px;
+    background: #e91e8b;
+    color: white;
+    transition: .3s ease-in;
+}
+.btn:hover,.btn-2:hover {
+	border-top-right-radius: 30px;
+}
+.p-img {
+    width: 470px;
+    position: absolute;
+    top: 20%;
+    right: 8%;
+}
+.p-img img {
+	width: 90%;
+}
+
+/* All about Animaton of this page */
+
+.anim {
+	opacity: 0;
+	transform: translateY(30px);
+	animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup
+{
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
